@@ -238,8 +238,25 @@ body {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
-
+.plans__backdrop {
+  background-color: rgba(0, 0, 0, 0.26);
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -10;
+}
+.plans__backdrop-visible .plans__backdrop {
+  visibility: visible;
+  z-index: 10;
+}
 .plans__title {
   text-align: center;
   flex-basis: 100%;
@@ -262,6 +279,49 @@ body {
   border: 3px solid black;
   margin-bottom: 40px;
   box-shadow: 5px 4px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.plans__more-info {
+  display: none;
+  background: white;
+  width: 80vw;
+  max-width: 500px;
+  height: 60vh;
+  position: relative;
+  z-index: 15;
+  text-align: center;
+
+  padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  .plans__more-info {
+    font-size: 20px;
+    max-width: 1000px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .plans__more-info {
+    font-size: 25px;
+  }
+}
+.plans__more-info-close-btn {
+  width: 30px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+.plans__more-info-show .plans__more-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.plans__enrollment-btn {
+  text-decoration: none;
+  color: #0d0d0d;
+  padding: 15px 20px;
+  display: inline-block;
+  font-size: 20px;
 }
 
 .advanced {
@@ -339,6 +399,7 @@ body {
   justify-content: center;
   text-align: center;
   padding: 80px;
+  /* z-index: 5; */
 }
 .gallery__heading {
   font-size: 40px;

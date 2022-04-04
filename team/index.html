@@ -1,137 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="team.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="team.css" />
+    <!-- <script src="../js/scroll.js" defer></script>
+    <script src="../js/hamburger.js" defer></script> -->
+    <!-- <script type="module" src="../js/main.js" defer></script> -->
+    <script type="module" src="../js/membersForm.js" defer></script>
+    <!-- <script type="module" src="../js/app.js" defer></script> -->
     <title>Our Team</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--  Main header -->
     <header class="main-header">
-
-        <div class="main-header__mobile-wrapper">
-            <div class="main-header__logo-wrapper">
-
-                <a href="../index.html" class="main-header__home-link">
-                    <img src="../assets/logo.png" alt="logo_image" class="main-header__logo">
-                </a>
-                <h1 class="main-header__logo-title">Coder</h1>
-            </div>
-
-            <div class="main-header__menu-btn">
-                <div class="main-header__menu-btn-burger"></div>
-            </div>
+      <div class="main-header__mobile-wrapper">
+        <div class="main-header__logo-wrapper">
+          <a href="../index.html" class="main-header__home-link">
+            <img
+              src="../assets/logo.png"
+              alt="logo_image"
+              class="main-header__logo"
+            />
+          </a>
+          <h1 class="main-header__logo-title">Coder</h1>
         </div>
-        <nav class="main-header__nav">
-            <ul class="main-header__items">
-                <li class="main-header__item li-first">
-                    <a href="../courses/index.html" class="main-header__link">
-                        Courses
-                    </a>
-                </li>
-                <li class="main-header__item li-first">
-                    <a href="../team/index.html" class="main-header__link">
-                        Our Team
-                    </a>
-                </li>
-                <li class="main-header__item">
-                    <a href="../enrollment/index.html" class="main-header__link">
-                        Enrollment
-                    </a>
-                </li>
-            </ul>
-        </nav>
+
+        <div class="main-header__menu-btn">
+          <div class="main-header__menu-btn-burger"></div>
+        </div>
+      </div>
+      <nav class="main-header__nav">
+        <ul class="main-header__items">
+          <li class="main-header__item li-first">
+            <a href="../courses/index.html" class="main-header__link">
+              Courses
+            </a>
+          </li>
+          <li class="main-header__item li-first">
+            <a href="../team/index.html" class="main-header__link">
+              Our Team
+            </a>
+          </li>
+          <li class="main-header__item">
+            <a href="../enrollment/index.html" class="main-header__link">
+              Enrollment
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-
-
-        <div class="team-title-wrapper">
-            <h1 class="team-title-wrapper__heading">Meet our Team</h1>
+      <div class="team-title-wrapper">
+        <h1 class="team-title-wrapper__heading">Meet our Team</h1>
+      </div>
+      <section class="team-wrapper">
+        <div class="team-wrapper__teacher">
+          <div class="team-wrapper__teacher-img">
+            <img src="../assets/teacher-1.jpg" alt="teacher_1" />
+          </div>
+          <div class="team-wrapper__teacher-about odd__teacher-about">
+            <h1 class="team-wrapper__title">John Wayne</h1>
+            <h3 class="team-wrapper__title--small">
+              Full-stack Developer at OurCode Group
+            </h3>
+            <p class="team-wrapper__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iste
+              magni a laboriosam impedit nam molestiae culpa libero placeat
+              laudantium illum facere deleniti asperiores neque delectus ab quo
+              suscipit nihil, possimus corporis labore pariatur odio. Ut
+              corrupti quos est sed!
+            </p>
+          </div>
         </div>
-        <section class="team-wrapper">
-            <div class="team-wrapper__teacher">
-                <div class="team-wrapper__teacher-img">
-                    <img src="../assets/teacher-1.jpg" alt="teacher_1">
-                </div>
-                <div class="team-wrapper__teacher-about odd__teacher-about">
-                    <h1 class="team-wrapper__title">John Wayne</h1>
-                    <h3 class="team-wrapper__title--small">Full-stack Developer at OurCode Group</h3>
-                    <p class="team-wrapper__text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iste magni a laboriosam impedit nam
-                        molestiae culpa libero placeat laudantium illum facere deleniti asperiores neque delectus ab quo
-                        suscipit nihil, possimus corporis labore pariatur odio. Ut corrupti quos est sed!
-                    </p>
-                </div>
-            </div>
-            <div class="team-wrapper__teacher">
-                <div class="team-wrapper__teacher-img even__teacher-img">
-                    <img src="../assets/teacher-2.jpg" alt="teacher_2">
-                </div>
-                <div class="team-wrapper__teacher-about even__teacher-about">
-                    <h1 class="team-wrapper__title">Marry Ann</h1>
-                    <h3 class="team-wrapper__title--small">Frontend Developer at OurCode Group</h3>
-                    <p class="team-wrapper__text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vero quas officiis molestias
-                        dicta,
-                        molestiae possimus, doloribus inventore alias optio exercitationem ut magnam ullam ducimus
-                        assumenda
-                        recusandae voluptatum error suscipit rem nesciunt debitis nisi qui voluptate reiciendis. Tenetur
-                        dolorem in deleniti odio placeat officia. Deserunt.
-                    </p>
-                </div>
-            </div>
-            <div class="team-wrapper__teacher">
-                <div class="team-wrapper__teacher-img">
-                    <img src="../assets/teacher-3.jpg" alt="teacher_3">
-                </div>
-                <div class="team-wrapper__teacher-about odd__teacher-about">
-                    <h1 class="team-wrapper__title">Will Smith</h1>
-                    <h3 class="team-wrapper__title--small">Full-Stack Developer at OurCode group</h3>
-                    <p class="team-wrapper__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam cum exercitationem dolorum
-                        numquam
-                        officia deserunt, provident doloremque similique aut! Dolor ullam temporibus, nihil rerum quo
-                        sit.
-                        Vel commodi eligendi quos. Nobis magnam eaque consequatur voluptatum placeat, sit rerum soluta,
-                        libero, sapiente non a.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="form-wrapper">
-            <form class="form-wrapper__form" name="enrollment-form">
-                <h3 style="text-align: center">Want to be member of our Team? <br> Apply for Job now:</h3>
-                <label for="firstName"> First Name </label>
-                <input type="text" />
-                <label for="lastName"> Last Name </label>
-                <input type="text" />
-                <label for="email"> Email </label>
-                <input type="email" />
-                <label for="message"> Your Experience </label>
-                <textarea name="" id="" cols="30" rows="10">
-            </textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+        <div class="team-wrapper__teacher">
+          <div class="team-wrapper__teacher-img even__teacher-img">
+            <img src="../assets/teacher-2.jpg" alt="teacher_2" />
+          </div>
+          <div class="team-wrapper__teacher-about even__teacher-about">
+            <h1 class="team-wrapper__title">Marry Ann</h1>
+            <h3 class="team-wrapper__title--small">
+              Frontend Developer at OurCode Group
+            </h3>
+            <p class="team-wrapper__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              vero quas officiis molestias dicta, molestiae possimus, doloribus
+              inventore alias optio exercitationem ut magnam ullam ducimus
+              assumenda recusandae voluptatum error suscipit rem nesciunt
+              debitis nisi qui voluptate reiciendis. Tenetur dolorem in deleniti
+              odio placeat officia. Deserunt.
+            </p>
+          </div>
+        </div>
+        <div class="team-wrapper__teacher">
+          <div class="team-wrapper__teacher-img">
+            <img src="../assets/teacher-3.jpg" alt="teacher_3" />
+          </div>
+          <div class="team-wrapper__teacher-about odd__teacher-about">
+            <h1 class="team-wrapper__title">Will Smith</h1>
+            <h3 class="team-wrapper__title--small">
+              Full-Stack Developer at OurCode group
+            </h3>
+            <p class="team-wrapper__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
+              cum exercitationem dolorum numquam officia deserunt, provident
+              doloremque similique aut! Dolor ullam temporibus, nihil rerum quo
+              sit. Vel commodi eligendi quos. Nobis magnam eaque consequatur
+              voluptatum placeat, sit rerum soluta, libero, sapiente non a.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="form-info not-visible">
+        <button class="btn-close">
+          <img
+            src="../assets/x-symbol-svgrepo-com.svg"
+            alt=""
+            class="form-info__close-btn"
+          />
+        </button>
+      </div>
+      <section class="form-wrapper">
+        <form class="form-wrapper__form" name="enrollment-form">
+          <h3 style="text-align: center">
+            Want to be member of our Team? <br />
+            Apply for Job now:
+          </h3>
+          <label for="firstName"> First Name </label>
+          <input
+            type="text"
+            required
+            placeholder="Your first name"
+            id="firstName"
+          />
+          <label for="lastName"> Last Name </label>
+          <input
+            type="text"
+            required
+            placeholder="Your last name"
+            id="lastname"
+          />
+          <label for="email"> Email </label>
+          <input type="email" required placeholder="Your email" id="email" />
+          <label for="message"> Your Experience </label>
+          <textarea name="" id="" cols="30" rows="10"> </textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
     <!-- Footer Section -->
     <footer class="main-footer">
-        <nav class="main-footer__nav">
-            <ul class="main-footer__list">
-                <li class="main-footer__list-items">
-                    <a href="#" class="main-footer__list-item">Support</a>
-                </li>
-                <li class="main-footer__list-items">
-                    <a href="#" class="main-footer__list-item">Terms of Use</a>
-                </li>
-            </ul>
-        </nav>
+      <nav class="main-footer__nav">
+        <ul class="main-footer__list">
+          <li class="main-footer__list-items">
+            <a href="#" class="main-footer__list-item">Support</a>
+          </li>
+          <li class="main-footer__list-items">
+            <a href="#" class="main-footer__list-item">Terms of Use</a>
+          </li>
+        </ul>
+      </nav>
     </footer>
-    <script type="module" src="../js/app.js"></script>
-</body>
-
+  </body>
 </html>

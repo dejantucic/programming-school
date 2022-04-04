@@ -4,6 +4,7 @@
   padding: 50px 0;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: url("../assets/enrollment-image.jpg");
@@ -63,6 +64,7 @@
   padding: 10px;
   resize: none;
   box-shadow: 2px 2px 3px 2px #e9baab;
+  white-space: normal;
 }
 
 .form-wrapper__form button {
@@ -87,4 +89,27 @@ textarea:focus,
 select:focus,
 input:focus {
   outline: none;
+}
+
+.form-info {
+  position: absolute;
+  z-index: 10;
+  padding: 25px;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #eb9a7f;
+  border: 1px solid black;
+}
+@media screen and (min-width: 992px) {
+  .form-info {
+    width: 60%;
+  }
+}
+.not-visible {
+  display: none;
+}
+.form-info__close-btn {
+  width: 30px;
 }
